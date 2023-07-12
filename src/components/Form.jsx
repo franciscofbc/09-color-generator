@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Values from 'values.js';
 
 const Form = ({ setColorList, setMessage }) => {
-  const [color, setColor] = useState('#f15025');
+  const [color, setColor] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -23,9 +23,22 @@ const Form = ({ setColorList, setMessage }) => {
     <section>
       <form onSubmit={handleSubmit}>
         <label htmlFor="">color generator</label>
-        <input type="color" onChange={handleChange} value={color} />
-        <input type="text" onChange={handleChange} value={color} />
-        <button type="submit">submit</button>
+        <input
+          type="color"
+          className="input-color"
+          onChange={handleChange}
+          value={color}
+        />
+        <input
+          type="text"
+          className="input-text"
+          onChange={handleChange}
+          placeholder="#f15025"
+          value={color}
+        />
+        <button type="submit" className="btn">
+          submit
+        </button>
       </form>
     </section>
   );

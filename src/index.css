@@ -254,3 +254,47 @@ ul {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
+
+form {
+  margin: 3.75rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+form label {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  color: var(--grey-900);
+  margin-right: 2rem;
+}
+
+form .input-color,
+form .input-text {
+  border-radius: var(--borderRadius);
+  border-color: transparent;
+}
+
+form .input-color {
+  /* align-self: stretch; */
+}
+
+form .input-text {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+}
+
+form .btn {
+  /* align-self: stretch; */
+}
+
+.color-list {
+  /* min-height: calc(100vh - 7.5rem); */
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.color {
+  cursor: pointer;
+}

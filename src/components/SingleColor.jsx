@@ -14,6 +14,7 @@ const SingleColor = ({ color, setMessage }) => {
 
   return (
     <article
+      className="color"
       style={{ background: `#${hex}` }}
       onClick={() => {
         copyToClipboard(`#${hex}`);
