@@ -259,7 +259,8 @@ form {
   margin: 3.75rem 2rem;
   display: flex;
   align-items: center;
-  /* border-radius: var(--borderRadius); */
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 form label {
@@ -267,17 +268,20 @@ form label {
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
   color: var(--grey-900);
-  margin-right: 2rem;
+}
+
+form .form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  /* align-items: center; */
 }
 
 form .input-color,
 form .input-text {
   border-radius: var(--borderRadius);
   border-color: transparent;
-}
-
-form .input-color {
-  /* align-self: stretch; */
+  min-height: 2.5rem;
 }
 
 form .input-text {
@@ -290,8 +294,9 @@ form .btn {
 }
 
 .color-list {
-  /* min-height: calc(100vh - 7.5rem); */
-  height: 100vh;
+  min-height: calc(
+    100vh - 10rem
+  ); /* 2.5rem (min-height input) + 3.75rem * 2 (margin form) = 10rem */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }

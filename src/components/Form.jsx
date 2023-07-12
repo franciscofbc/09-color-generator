@@ -23,22 +23,24 @@ const Form = ({ setColorList, setMessage }) => {
     <section>
       <form onSubmit={handleSubmit}>
         <label htmlFor="">color generator</label>
-        <input
-          type="color"
-          className="input-color"
-          onChange={handleChange}
-          value={color}
-        />
-        <input
-          type="text"
-          className="input-text"
-          onChange={handleChange}
-          placeholder="#f15025"
-          value={color}
-        />
-        <button type="submit" className="btn">
-          submit
-        </button>
+        <div className="form-container">
+          <input
+            type="color"
+            className="input-color"
+            onChange={handleChange}
+            value={color}
+          />
+          <input
+            type="text"
+            className="input-text"
+            onChange={handleChange}
+            placeholder="#f15025"
+            value={color}
+          />
+          <button type="submit" className="btn">
+            submit
+          </button>
+        </div>
       </form>
     </section>
   );
