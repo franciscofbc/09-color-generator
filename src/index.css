@@ -259,6 +259,7 @@ form {
   margin: 3.75rem 2rem;
   display: flex;
   align-items: center;
+  /* border-radius: var(--borderRadius); */
 }
 
 form label {
