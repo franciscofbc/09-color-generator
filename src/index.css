@@ -298,12 +298,9 @@ form .input-text {
 
 .color {
   cursor: pointer;
-}
-
-.color-text {
   padding: 1rem 2rem;
 }
 
-.color-text p {
+.color-text {
   margin-bottom: 0.25rem;
 }

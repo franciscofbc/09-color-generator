@@ -16,15 +16,13 @@ const SingleColor = ({ color, setMessage }) => {
   return (
     <article
       className="color"
-      style={{ background: `#${hex}` }}
+      style={{ background: `#${hex}`, color: type === 'shade' && '#fff' }}
       onClick={() => {
         copyToClipboard(`#${hex}`);
       }}
     >
-      <div style={{ color: type === 'shade' && '#fff' }} className="color-text">
-        <p>{weight}%</p>
-        <p>#{hex}</p>
-      </div>
+      <p className="color-text">{weight}%</p>
+      <p className="color-text">#{hex}</p>
     </article>
   );
 };
