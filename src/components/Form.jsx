@@ -37,7 +37,7 @@ const Form = ({ setColorList, setMessage }) => {
             placeholder="#f15025"
             value={color}
           />
-          <button type="submit" className="btn">
+          <button type="submit" className="btn" style={{ background: color }}>
             submit
           </button>
         </div>
