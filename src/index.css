@@ -274,13 +274,12 @@ form .form-container {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
-  /* align-items: center; */
 }
 
 form .input-color,
 form .input-text {
   border-radius: var(--borderRadius);
-  border-color: transparent;
+  border: 1px solid transparent;
   min-height: 2.5rem;
 }
 
@@ -289,14 +288,10 @@ form .input-text {
   font-size: 1.25rem;
 }
 
-form .btn {
-  /* align-self: stretch; */
-}
-
 .color-list {
   min-height: calc(
-    100vh - 10rem
-  ); /* 2.5rem (min-height input) + 3.75rem * 2 (margin form) = 10rem */
+    100vh - 10.0625rem
+  ); /* 2.5rem (min-height input) + 3.75rem * 2 (margin form) + 0+0625 (input border)= 10.0625rem */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
