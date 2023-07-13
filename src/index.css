@@ -299,3 +299,11 @@ form .input-text {
 .color {
   cursor: pointer;
 }
+
+.color-text {
+  padding: 1rem 2rem;
+}
+
+.color-text p {
+  margin-bottom: 0.25rem;
+}

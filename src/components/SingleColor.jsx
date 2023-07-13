@@ -1,5 +1,6 @@
 const SingleColor = ({ color, setMessage }) => {
-  const { weight, hex } = color;
+  const { weight, hex, type } = color;
+  // type === 'shade' && console.log('teste');
 
   async function copyToClipboard(text) {
     try {
@@ -20,8 +21,10 @@ const SingleColor = ({ color, setMessage }) => {
         copyToClipboard(`#${hex}`);
       }}
     >
-      <p>{weight}%</p>
-      <p>#{hex}</p>
+      <div style={{ color: type === 'shade' && '#fff' }} className="color-text">
+        <p>{weight}%</p>
+        <p>#{hex}</p>
+      </div>
     </article>
   );
 };
