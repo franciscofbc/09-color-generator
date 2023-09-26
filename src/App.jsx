@@ -6,7 +6,7 @@ import Form from './components/Form';
 import ColorList from './components/ColorList';
 
 const App = () => {
-  const [colorList, setColorList] = useState(new Values('#f15025').all(10));
+  const [colorList, setColorList] = useState(new Values('#f15025').all(20));
   const [message, setMessage] = useState({ error: '', success: '' });
 
   useEffect(() => {

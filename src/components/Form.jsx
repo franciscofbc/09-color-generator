@@ -8,7 +8,7 @@ const Form = ({ setColorList, setMessage }) => {
     event.preventDefault();
 
     try {
-      setColorList(new Values(color).all(10));
+      setColorList(new Values(color).all(20));
     } catch (error) {
       // console.log(error.message);
       setMessage({ success: '', error: error.message });
